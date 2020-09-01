@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include ('./partials/head') %>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <%- include ('./partials/header') %>
+  </header>
+
+  <main>
+
+    <div class="container-fluid">
+
+
+      <!-- beginning card-->
+      <div class="col-md-4 col-sm-6 content-card">
+        <div class="card-big-shadow">
+            <div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
+                <div class="content">
+                    <h4 class="title" id="fullTitle"><a href="/notes/<%= note._id %>"> <%= note.title %> </a></h4>
+                    <p class="description" id="fullContent"> <%= note.content %> </p>
+                </div>
+            </div>
+          </div>
+          <a href="/notes/edit/<%= note._id %>" id="editBtn" class="btn btn-warning">Edit This Note</a>
+          <a href="/notes/delete/<%= note._id %>" class="btn btn-danger">Delete This Note</a>
+<!--
+          <a href="/notes/<%= note._id %>/edit" class="btn btn-danger">Delete This Note</a> -->
+      </div>
+    <!-- end card -->
+
+
+
+  </main>
+
+  <footer>
+    <%- include ('./partials/footer') %>
+  </footer>
+</body>
+</html>
