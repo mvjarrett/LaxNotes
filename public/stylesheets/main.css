@@ -42,14 +42,14 @@ body{margin-top:20px;}
     margin-bottom: 0px;
 }
 .card-big-shadow:before {
-    background-image: url("http://static.tumblr.com/i21wc39/coTmrkw40/shadow.png");
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    bottom: -12%;
-    content: "";
-    display: block;
-    left: -12%;
+    /* background-image: url("http://static.tumblr.com/i21wc39/coTmrkw40/shadow.png"); */
+    /* background-position: center bottom; */
+    /* background-repeat: no-repeat; */
+    /* background-size: 100% 100%; */
+    /* bottom: -12%; */
+    /* content: ""; */
+    /* display: block; */
+    /* left: -12%; */
     position: absolute;
     right: 0;
     top: 0;

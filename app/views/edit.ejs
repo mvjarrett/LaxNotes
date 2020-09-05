@@ -13,7 +13,7 @@
   
     <main>
       <div class="container">
-        <form action="/notes/<%= note._id %>" method="PUT" class="form-horizontal">
+        <form action="/notes/<%= note._id %>?_method=PUT" method="POST" class="form-horizontal">
           <div class="form-group">
             <label for="title" class="control-label col-sm-2">Note Title:</label>
             <div class="col-sm-10">
