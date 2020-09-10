@@ -159,6 +159,11 @@ exports.home = (req, res) => {
   res.redirect("/notes")
   };
 
+
+exports.about = (req, res) => {
+    res.render("about")
+    };
+
 exports.form = (req, res) => {
   res.render('newNote');
 }

@@ -3,6 +3,8 @@ module.exports = (app) => {
 
   app.get('/', notes.home)
 
+  app.get('/about', notes.about)
+
   app.get('/new', notes.form)
 
   app.post('/notes', notes.create);

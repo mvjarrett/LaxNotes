@@ -8,3 +8,16 @@ body{margin-top:20px;}
       column-count: 5;
     }
   }
+
+#formTitle{
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+  text-align: center;
+  
+}
+
+#about{
+  padding-left: 100px;
+  padding-right: 100px;
+}
