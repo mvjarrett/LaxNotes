@@ -12,16 +12,16 @@
     </header>
   
     <main>
-      <div class="container">
+      <div id="cont" class="container">
         <form action="/notes/<%= note._id %>?_method=PUT" method="POST" id="editForm" class="form-horizontal">
           <div class="form-group">
             <div class="col-sm-10">
-              <input name="title" type="text" class="form-control" id="formTitle" value="<%= note.title %>">
+              <input name="title" type="text" class="" id="formTitle" value="<%= note.title %>">
             </div>
           </div>
           <div class="form-group">
             <div class="col-sm-10">
-              <textarea name="content" id="noteBody" cols="80" rows="10" ><%= note.content %></textarea>
+              <textarea name="content" id="noteBody" rows="6" ><%= note.content %></textarea>
           <div class="form-group button">
             <input type="submit" value="Save Note">
           </div>

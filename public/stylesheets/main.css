@@ -1,4 +1,18 @@
-body{margin-top:20px;}
+html {
+  height: 100%;
+}
+
+body{
+  height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: rgb(131,131,131);
+background: -moz-linear-gradient(0deg, rgba(131,131,131,1) 0%, rgba(255,255,255,1) 76%);
+background: -webkit-linear-gradient(0deg, rgba(131,131,131,1) 0%, rgba(255,255,255,1) 76%);
+background: linear-gradient(0deg, rgba(131,131,131,1) 0%, rgba(255,255,255,1) 76%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#838383",endColorstr="#ffffff",GradientType=1);
+}
 
 .card-columns {
     @include media-breakpoint-only(lg) {
@@ -14,10 +28,21 @@ body{margin-top:20px;}
   border-bottom: 1px solid black;
   border-radius: 0;
   text-align: center;
-  
+  width: 100%;
+}
+
+#cont{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#noteBody{
+  width: 100%;
+  padding: 25%, 0, 25%, 0;
 }
 
 #about{
   padding-left: 100px;
   padding-right: 100px;
 }
+

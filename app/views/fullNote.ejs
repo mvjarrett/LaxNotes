@@ -19,15 +19,16 @@
       <!-- beginning card-->
       <div class="col-md-4 col-sm-6 content-card">
         <div class="card-big-shadow">
-            <div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
+            <div id="card" class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
                 <div class="content">
                     <h4 class="title" id="fullTitle"><a href="/notes/<%= note._id %>"> <%= note.title %> </a></h4>
                     <p class="description" id="fullContent"> <%= note.content %> </p>
+                    <a href="/notes/edit/<%= note._id %>" class="card-link">Edit</a>
+                    <a href="/notes/delete/<%= note._id %>" class="card-link">Delete</a>
                 </div>
             </div>
           </div>
-          <a href="/notes/edit/<%= note._id %>" class="card-link">Edit</a>
-          <a href="/notes/delete/<%= note._id %>" class="card-link">Delete</a>
+
       </div>
       <!-- end card-->
 

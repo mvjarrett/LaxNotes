@@ -21,11 +21,8 @@
 
         <div class="card" >
           <div class="card-body">
-            <h4 class="card-title"> <%= note.title %> </a></h4>
+            <h4 class="card-title"><a href="/notes/<%= note._id %>"><%= note.title %></a></h4>
             <p class="card-text"> <%= note.content %></p>
-            <a href="/notes/<%= note._id %>" class="card-link">View</a>
-            <a href="/notes/edit/<%= note._id %>" class="card-link">Edit</a>
-            <a href="/notes/delete/<%= note._id %>" class="card-link">Delete</a>
           </div>
         </div>
         <% }); %>
