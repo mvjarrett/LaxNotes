@@ -21,7 +21,7 @@
         <div class="card-big-shadow">
             <div id="card" class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
                 <div class="content">
-                    <h4 class="title" id="fullTitle"><a href="/notes/<%= note._id %>"> <%= note.title %> </a></h4>
+                    <h4 class="title" id="fullTitle"><%= note.title %></h4>
                     <p class="description" id="fullContent"> <%= note.content %> </p>
                     <a href="/notes/edit/<%= note._id %>" class="card-link">Edit</a>
                     <a href="/notes/delete/<%= note._id %>" class="card-link">Delete</a>
